@@ -6,6 +6,7 @@ context.fillStyle = "white";
 
 let State = {
     foo: null,
+    radius: 5,
 };
 
 function init(): void {
@@ -17,7 +18,10 @@ function update(): void {
 }
 
 function draw(): void {
-    context.fillRect(State.foo, State.foo, 25, 25);
+    context.beginPath();
+    context.arc(State.foo, State.foo, State.radius, 0, 2 * Math.PI);
+    context.closePath();
+    context.fill();
 }
 
 function loop(): void {

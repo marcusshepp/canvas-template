@@ -9,8 +9,13 @@ body {
 }
 
 .canvas-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+	align-items: center;
     margin: 0.5rem;
+}
+
+.canvas {
+	border: solid white 1px;
 }
